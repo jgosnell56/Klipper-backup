@@ -23,6 +23,9 @@ cors_domains =
 
 [octoprint_compat]
 
+[file_manager]
+enable_object_processing = True
+
 [history]
 
 [update_manager]
@@ -48,6 +51,14 @@ primary_branch = main
 path = ~/moonraker-timelapse
 origin = https://github.com/mainsail-crew/moonraker-timelapse.git
 managed_services = klipper moonraker
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
 
 [timelapse]
 output_path = /mnt/timelapse/timelapse
